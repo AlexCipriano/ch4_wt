@@ -17,3 +17,5 @@
         %td= movie.release_date
         %td= link_to "More about #{movie.title}", movie_path(movie)
         %td= link_to 'Add new movie', new_movie_path
+        %td= link_to 'Edit this movie', edit_movie_path(movie)
+        %td= link_to 'Delete this movie', movie_path(movie), :method => :delete
